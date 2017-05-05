@@ -1,0 +1,77 @@
+@red :#d22f25;
+@green: #2D802D;
+@lightBlue: #F4F5F5;
+
+
+body {
+	background-color: @lightBlue;
+
+	.header {
+		margin-top: 5%;
+
+		.logo {
+			img {
+			max-width:200px;
+			height:auto;
+
+			}
+
+		}
+	}
+
+
+
+	.parallax-window {
+		min-height: 500px;
+		background: transparent;
+		padding: 0px;
+		margin-bottom: 0px;
+
+		
+		.btn {
+			font-size: 40px;
+			border: 2px solid @red;
+			color: @green;
+			padding: 10px 20px;
+			margin-top: 10%;
+		}
+
+	}
+
+	#nav {
+		background-color: green;
+	    margin: 0px;
+	    width: 100%;
+	    .navbar {
+	    	margin-bottom: 0;
+	    }
+
+	    .nav {
+	    	margin-left: 27%;
+
+
+	    	a {
+	    		color: white;
+	    		font-size: 20px;
+	    	}
+	    }
+	}
+
+	#nav.affix {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index:10;
+	}	
+
+	.formDiv {
+		width: 60%;
+    	margin-left: 20%;
+	}
+
+	footer {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+}

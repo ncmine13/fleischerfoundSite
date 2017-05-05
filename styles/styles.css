@@ -1,0 +1,52 @@
+body {
+  background-color: #F4F5F5;
+}
+body .header {
+  margin-top: 5%;
+}
+body .header .logo img {
+  max-width: 200px;
+  height: auto;
+}
+body .parallax-window {
+  min-height: 500px;
+  background: transparent;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+body .parallax-window .btn {
+  font-size: 40px;
+  border: 2px solid #d22f25;
+  color: #2D802D;
+  padding: 10px 20px;
+  margin-top: 10%;
+}
+body #nav {
+  background-color: green;
+  margin: 0px;
+  width: 100%;
+}
+body #nav .navbar {
+  margin-bottom: 0;
+}
+body #nav .nav {
+  margin-left: 27%;
+}
+body #nav .nav a {
+  color: white;
+  font-size: 20px;
+}
+body #nav.affix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+body .formDiv {
+  width: 60%;
+  margin-left: 20%;
+}
+body footer {
+  text-align: center;
+  margin-bottom: 15px;
+}
