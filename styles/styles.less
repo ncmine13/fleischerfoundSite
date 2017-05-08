@@ -11,15 +11,27 @@ body {
 	background-color: @lightBlue;
 
 	.header {
-		margin-top: 5%;
+		padding-top: 3%;
+
+		div {
+			margin-bottom: 20px;
+		}
 
 		.logo {
 			img {
+			margin-left:10%;
 			max-width:200px;
 			height:auto;
 
 			}
 
+		}
+		h1 {
+			padding-top: 5%;
+			font-family: 'Fjalla One', sans-serif;
+			color: @red;
+			font-size: 60px;
+			letter-spacing: 1.5px;
 		}
 	}
 
@@ -41,6 +53,9 @@ body {
 		}
 		.btn:hover {
 			background-color: @green;
+			transform: scale(1.025);
+  			box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+  			transition: all .2s;
 		}
 
 	}
@@ -54,12 +69,14 @@ body {
 	    }
 
 	    .nav {
-	    	margin-left: 27%;
+	    	width: 100%;
+	    	margin-left: 18%;
 
 
 	    	a {
 	    		color: white;
 	    		font-size: 20px;
+	    		padding: 15px 40px;
 	    	}
 	    }
 	}
@@ -84,6 +101,14 @@ body {
 		top: 0;
 		width: 100%;
 		z-index:10;
+	}
+
+	.whatWeDoDiv {
+		margin-top: 3%;
+
+		.mainPimg {
+			margin: 5% 0%;
+		}
 	}	
 
 	.formDiv {
@@ -92,9 +117,21 @@ body {
     	margin-top:5%;
 	}
 
-	footer {
+	.footerContainer {
+		background-color: @gray;
+		color: white;
+
+		.bottomRow {
+			margin-bottom: 7%;
+			margin-top: 5%;
+		}
+
+		footer {
 		text-align: center;
 		margin-bottom: 15px;
+		}
 	}
+
+
 
 }
