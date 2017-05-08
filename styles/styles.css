@@ -39,6 +39,21 @@ body #nav .nav a {
   color: white;
   font-size: 20px;
 }
+body #secondaryNav {
+  background-color: #7E8F7C;
+  margin: 0px;
+  width: 100%;
+}
+body #secondaryNav .navbar {
+  margin-bottom: 0;
+}
+body #secondaryNav .nav {
+  margin-left: 0%;
+}
+body #secondaryNav .nav a {
+  color: white;
+  font-size: 20px;
+}
 body #nav.affix {
   position: fixed;
   top: 0;
