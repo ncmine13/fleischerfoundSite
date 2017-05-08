@@ -1,6 +1,10 @@
 @red :#d22f25;
-@green: #2D802D;
+@translucentRed: rgba(210, 47, 37, 0.62);
+@green: #7E8F7C;
+@translucentGreen: rgba(126, 143, 124, 0.82);
 @lightBlue: #F4F5F5;
+@gray: #424747;
+
 
 
 body {
@@ -30,16 +34,19 @@ body {
 		
 		.btn {
 			font-size: 40px;
-			border: 2px solid @red;
-			color: @green;
+			color: @gray;
+			background-color: @translucentGreen;
 			padding: 10px 20px;
 			margin-top: 10%;
+		}
+		.btn:hover {
+			background-color: @green;
 		}
 
 	}
 
 	#nav {
-		background-color: green;
+		background-color: @green;
 	    margin: 0px;
 	    width: 100%;
 	    .navbar {
@@ -67,6 +74,7 @@ body {
 	.formDiv {
 		width: 60%;
     	margin-left: 20%;
+    	margin-top:5%;
 	}
 
 	footer {

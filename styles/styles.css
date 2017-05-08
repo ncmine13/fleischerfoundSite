@@ -16,13 +16,16 @@ body .parallax-window {
 }
 body .parallax-window .btn {
   font-size: 40px;
-  border: 2px solid #d22f25;
-  color: #2D802D;
+  color: #424747;
+  background-color: rgba(126, 143, 124, 0.82);
   padding: 10px 20px;
   margin-top: 10%;
 }
+body .parallax-window .btn:hover {
+  background-color: #7E8F7C;
+}
 body #nav {
-  background-color: green;
+  background-color: #7E8F7C;
   margin: 0px;
   width: 100%;
 }
@@ -45,6 +48,7 @@ body #nav.affix {
 body .formDiv {
   width: 60%;
   margin-left: 20%;
+  margin-top: 5%;
 }
 body footer {
   text-align: center;
