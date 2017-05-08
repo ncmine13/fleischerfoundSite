@@ -82,18 +82,25 @@ body .whatWeDoDiv {
 body .whatWeDoDiv .mainPimg {
   margin: 5% 0%;
 }
-body .formDiv {
-  width: 60%;
-  margin-left: 20%;
-  margin-top: 5%;
+body .emailContainer {
+  padding: 5%;
+}
+body .emailContainer .form-control {
+  width: 70%;
+}
+body .meetOurTeamContainer {
+  margin: 5%;
+}
+body .meetOurTeamContainer img {
+  max-width: 100%;
 }
 body .footerContainer {
   background-color: #424747;
   color: white;
 }
 body .footerContainer .bottomRow {
-  margin-bottom: 7%;
-  margin-top: 5%;
+  margin-bottom: 4%;
+  margin-top: 4%;
 }
 body .footerContainer footer {
   text-align: center;
