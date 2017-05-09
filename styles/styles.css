@@ -1,5 +1,6 @@
 body {
   background-color: #F4F5F5;
+  font-family: 'PT Sans', sans-serif;
 }
 body .header {
   padding-top: 3%;
@@ -55,18 +56,19 @@ body #nav .nav a {
   font-size: 20px;
   padding: 15px 40px;
 }
-body #secondaryNav {
+body #secondaryNav.affix {
   background-color: #7E8F7C;
   margin: 0px;
   width: 100%;
+  z-index: 10;
 }
-body #secondaryNav .navbar {
+body #secondaryNav.affix .navbar {
   margin-bottom: 0;
 }
-body #secondaryNav .nav {
+body #secondaryNav.affix .nav {
   margin-left: 0%;
 }
-body #secondaryNav .nav a {
+body #secondaryNav.affix .nav a {
   color: white;
   font-size: 20px;
 }
@@ -91,8 +93,17 @@ body .emailContainer .form-control {
 body .meetOurTeamContainer {
   margin: 5%;
 }
-body .meetOurTeamContainer img {
+body .meetOurTeamContainer .profile {
+  padding: 4%;
+}
+body .meetOurTeamContainer .profile img {
   max-width: 100%;
+  border-radius: 3px;
+  box-shadow: 1px 1px 4px rgba(59, 54, 54, 0.84);
+}
+body .contactContainer {
+  background-color: #424747;
+  color: white;
 }
 body .footerContainer {
   background-color: #424747;

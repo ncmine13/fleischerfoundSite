@@ -9,6 +9,7 @@
 
 body {
 	background-color: @lightBlue;
+	font-family: 'PT Sans', sans-serif;
 
 	.header {
 		padding-top: 3%;
@@ -80,10 +81,11 @@ body {
 	    	}
 	    }
 	}
-	#secondaryNav {
+	#secondaryNav.affix {
 		background-color: @green;
 	    margin: 0px;
 	    width: 100%;
+	    z-index: 10;
 		    .navbar {
 		    	margin-bottom: 0;
 		    }
@@ -122,9 +124,23 @@ body {
 	.meetOurTeamContainer {
 		margin: 5%;
 
-		img {
+		.profile {
+			padding: 4%;
+			img {
 			max-width: 100%;
+			border-radius: 3px;
+			box-shadow: 1px 1px 4px rgba(59, 54, 54, 0.84);
+			}
+
 		}
+
+		
+
+	}
+
+	.contactContainer {
+		background-color: @gray;
+		color: white;
 	}
 
 
