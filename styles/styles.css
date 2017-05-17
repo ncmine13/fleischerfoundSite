@@ -98,9 +98,37 @@ body .meetOurTeamContainer .profile img {
   border-radius: 3px;
   box-shadow: 1px 1px 4px rgba(59, 54, 54, 0.84);
 }
+body .studentProfilesDiv {
+  margin-bottom: 2%;
+}
 body .contactContainer {
   background-color: #424747;
   color: white;
+}
+body .contactContainer .contactRowInfo {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  align-items: center;
+}
+body .contactContainer .contactRowInfo .subscriptionInput {
+  width: 50%;
+}
+body .contactContainer .contactRowInfo button {
+  padding: 10px 20px;
+  background-color: #d22f25;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+  box-shadow: 1px 1px 4px rgba(59, 54, 54, 0.84);
+}
+body .contactContainer .contactRowInfo button:hover {
+  transform: scale(1.025);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+  transition: all .2s;
+}
+body .contributeContainer {
+  margin-top: 10%;
 }
 body .footerContainer {
   background-color: #424747;
