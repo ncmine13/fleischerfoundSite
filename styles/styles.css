@@ -178,7 +178,7 @@ body #contributeContainer .donate {
 }
 body #contributeContainer .donate:hover {
   background-color: #F93D33;
-  transform: scale(1.025);
+  transform: scale(1.035);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   transition: all .3s;
 }
@@ -186,6 +186,49 @@ body .contributeFooter {
   background-color: #EDF1F1;
   position: absolute;
   margin-bottom: 0px;
+}
+body .contributeFooter h3 {
+  font-size: 30px;
+  color: #0F1723;
+  margin: 5%;
+}
+body .contributeFooter p {
+  color: #0F1723;
+  font-size: 20px;
+  margin: 0% 20% 8% 20%;
+}
+body .contributeFooter .copyright {
+  background-color: #424747;
+}
+body .contributeFooter .copyright p {
+  font-size: 15px;
+  color: #EDF1F1;
+  letter-spacing: 0.7px;
+  margin-bottom: 4%;
+}
+body .contributeFooter .contributeContactRow {
+  letter-spacing: 1px;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  background-color: #424747;
+}
+body .contributeFooter .contributeContactRow .subscription {
+  padding: 0% 7%;
+}
+body .contributeFooter .contributeContactRow .subscription p {
+  color: #EDF1F1;
+  margin: 0;
+  margin-bottom: 4%;
+  text-align: left;
+}
+body .contributeFooter .contributeContactRow .subscription input {
+  width: 60%;
+  border-radius: 2px;
+}
+body .contributeFooter .contributeContactRow .emailAddress p {
+  color: #EDF1F1;
+  text-align: right;
+  margin: 0% 0% 3% 0%;
 }
 body .footerContainer {
   background-color: #424747;
