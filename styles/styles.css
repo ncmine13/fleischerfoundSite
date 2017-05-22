@@ -127,8 +127,26 @@ body .contactContainer .contactRowInfo button:hover {
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   transition: all .2s;
 }
+body .contributeBackground {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+body .contributeBackground img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
 body .contributeContainer {
   margin-top: 10%;
+  height: 500px;
 }
 body .footerContainer {
   background-color: #424747;
