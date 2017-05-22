@@ -4,6 +4,7 @@
 @translucentGreen: rgba(126, 143, 124, 0.82);
 @lightBlue: #F4F5F5;
 @gray: #424747;
+@lightGray: #EDF1F1;
 
 
 
@@ -142,6 +143,9 @@ body {
 	.contactContainer {
 		background-color: @gray;
 		color: white;
+		position:absolute;
+		margin-bottom: 0px;
+		width:100%;
 		.contactRowInfo {
 			margin-top: 2%;
 			margin-bottom: 2%;
@@ -175,6 +179,11 @@ body {
 		width: 200%; 
 		height: 200%;
 		img {
+			-webkit-filter: blur(5px);
+			-moz-filter: blur(5px);
+			-o-filter: blur(5px);
+			-ms-filter: blur(5px);
+			filter: blur(2px);
 			position: absolute; 
 			top: 0; 
 			left: 0; 
@@ -186,9 +195,41 @@ body {
 		}
 		
 	}
-	.contributeContainer {
-		margin-top: 10%;
+	#contributeContainer {
 		height: 500px;
+		margin-top: 11%;
+		margin-bottom: 5%;
+		color: @lightGray;
+		h1 {
+			margin-bottom: 5%;
+			font-size: 50px;
+		}
+		p {
+			margin: 2% 13% 8% 13%;
+			font-size: 22px;
+		}
+		.donate {
+			width: 250px;
+			height: 100px;
+			padding:20px 20px;
+			background-color: @red;
+			border: none;
+		    border-radius: 3px;
+		    font-size: 20px;
+		    box-shadow: 1px 1px 4px rgba(59, 54, 54, 0.84);
+		}
+		.donate:hover {
+			background-color: #F93D33;
+			transform: scale(1.025);
+  			box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+  			transition: all .3s;
+		}
+	}
+
+	.contributeFooter {
+		background-color: @lightGray;
+		position: absolute;
+		margin-bottom: 0px;
 	}
 
 

@@ -104,6 +104,9 @@ body .studentProfilesDiv {
 body .contactContainer {
   background-color: #424747;
   color: white;
+  position: absolute;
+  margin-bottom: 0px;
+  width: 100%;
 }
 body .contactContainer .contactRowInfo {
   margin-top: 2%;
@@ -135,6 +138,11 @@ body .contributeBackground {
   height: 200%;
 }
 body .contributeBackground img {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(2px);
   position: absolute;
   top: 0;
   left: 0;
@@ -144,9 +152,40 @@ body .contributeBackground img {
   min-width: 50%;
   min-height: 50%;
 }
-body .contributeContainer {
-  margin-top: 10%;
+body #contributeContainer {
   height: 500px;
+  margin-top: 11%;
+  margin-bottom: 5%;
+  color: #EDF1F1;
+}
+body #contributeContainer h1 {
+  margin-bottom: 5%;
+  font-size: 50px;
+}
+body #contributeContainer p {
+  margin: 2% 13% 8% 13%;
+  font-size: 22px;
+}
+body #contributeContainer .donate {
+  width: 250px;
+  height: 100px;
+  padding: 20px 20px;
+  background-color: #d22f25;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+  box-shadow: 1px 1px 4px rgba(59, 54, 54, 0.84);
+}
+body #contributeContainer .donate:hover {
+  background-color: #F93D33;
+  transform: scale(1.025);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+  transition: all .3s;
+}
+body .contributeFooter {
+  background-color: #EDF1F1;
+  position: absolute;
+  margin-bottom: 0px;
 }
 body .footerContainer {
   background-color: #424747;

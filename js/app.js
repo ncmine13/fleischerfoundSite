@@ -32,3 +32,4 @@ $('a.less', minimized_elements).click(function(event){
     event.preventDefault();
     $(this).parent().hide().prev().show().prev().show();    
 });
+
