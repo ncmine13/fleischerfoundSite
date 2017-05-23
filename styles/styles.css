@@ -96,13 +96,41 @@ body .meetOurTeamContainer .profile {
 body .meetOurTeamContainer .profile img {
   max-width: 100%;
   border-radius: 3px;
-  box-shadow: 1px 1px 4px rgba(59, 54, 54, 0.84);
+  box-shadow: 2px 2px 8px rgba(59, 54, 54, 0.84);
 }
 body .profileContainer #mainArea {
-  margin-top: 10%;
+  margin: 8% 0;
 }
 body .profileContainer #carousel-bounding-box {
   background-color: #0F1723;
+  border-radius: 2px;
+  box-shadow: 1px 1px 4px rgba(59, 54, 54, 0.84);
+}
+body .profileContainer h1 {
+  margin-bottom: 4%;
+}
+body .profileContainer #carousel-text h2 {
+  font-size: 45px;
+  font-weight: bold;
+  color: #d22f25;
+  letter-spacing: 2.5px;
+  margin-left: 10%;
+}
+body .profileContainer .hide-bullets {
+  list-style: none;
+  margin-left: -40px;
+  margin-top: 4%;
+}
+body .profileContainer .hide-bullets li {
+  padding-left: 0;
+  padding-right: 20px;
+}
+body .profileContainer .hide-bullets li .thumbnail {
+  border: none;
+  box-shadow: 1px 1px 4px rgba(59, 54, 54, 0.84);
+  background-color: none;
+  padding: 0px;
+  margin-left: 0;
 }
 body .contactContainer {
   background-color: #424747;
@@ -245,9 +273,4 @@ body .footerContainer .bottomRow {
 body .footerContainer footer {
   text-align: center;
   margin-bottom: 15px;
-}
-body .hide-bullets {
-  list-style: none;
-  margin-left: -40px;
-  margin-top: 20px;
 }

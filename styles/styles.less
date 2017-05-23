@@ -130,7 +130,7 @@ body {
 			img {
 			max-width: 100%;
 			border-radius: 3px;
-			box-shadow: 1px 1px 4px rgba(59, 54, 54, 0.84);
+			box-shadow: 2px 2px 8px rgba(59, 54, 54, 0.84);
 			}
 
 		}
@@ -139,11 +139,42 @@ body {
 
 	.profileContainer {
 		#mainArea {
-			margin-top: 10%;
-
+			margin: 8% 0;
 		}
 		#carousel-bounding-box {
 			background-color: @darkBlue;
+			border-radius: 2px;
+			box-shadow: 1px 1px 4px rgba(59, 54, 54, 0.84);
+		}
+		h1 {
+			margin-bottom: 4%;
+		}
+		#carousel-text {
+			h2 {
+				font-size: 45px;
+				font-weight: bold;
+				color: @red;
+				letter-spacing: 2.5px;
+				margin-left: 10%;
+
+			}
+		}
+
+		.hide-bullets {
+			list-style: none;
+			margin-left: -40px;
+			margin-top: 4%;
+			li {
+				padding-left: 0;
+				padding-right:20px;
+				.thumbnail {
+					border: none;
+					box-shadow: 1px 1px 4px rgba(59, 54, 54, 0.84);
+					background-color: none;
+					padding:0px;
+					margin-left: 0;
+				}
+			}
 		}
 	}
 
@@ -303,10 +334,6 @@ body {
 		}
 	}
 
-.hide-bullets {
-	list-style: none;
-	margin-left: -40px;
-	margin-top:20px;
-}
+
 
 }
