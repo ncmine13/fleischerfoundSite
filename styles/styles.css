@@ -94,9 +94,13 @@ body .meetOurTeamContainer .profile {
   padding: 4%;
 }
 body .meetOurTeamContainer .profile img {
-  max-width: 100%;
-  border-radius: 3px;
-  box-shadow: 2px 2px 8px rgba(59, 54, 54, 0.84);
+  max-width: 80%;
+  border-radius: 360px;
+  box-shadow: 1px 1px 8px rgba(59, 54, 54, 0.74);
+}
+body .meetOurTeamContainer .profile p {
+  letter-spacing: 1px;
+  line-height: 20px;
 }
 body .profileContainer #mainArea {
   margin: 8% 0;
@@ -273,4 +277,9 @@ body .footerContainer .bottomRow {
 body .footerContainer footer {
   text-align: center;
   margin-bottom: 15px;
+}
+@media screen and (max-width: 990px) {
+  .profile h1 {
+    margin: 8% 20%;
+  }
 }
