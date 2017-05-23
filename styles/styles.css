@@ -98,6 +98,9 @@ body .emailContainer {
 body .emailContainer .form-control {
   width: 70%;
 }
+body .meetOurTeamContainer {
+  text-shadow: 1px 2px 7px #aba1a1;
+}
 body .meetOurTeamContainer .profile {
   padding: 4%;
 }
@@ -109,6 +112,9 @@ body .meetOurTeamContainer .profile img {
 body .meetOurTeamContainer .profile p {
   letter-spacing: 1px;
   line-height: 20px;
+}
+body .profileContainer {
+  text-shadow: 1px 2px 7px #aba1a1;
 }
 body .profileContainer #mainArea {
   margin: 8% 0;
@@ -200,6 +206,7 @@ body #contributeContainer {
   margin-top: 11%;
   margin-bottom: 5%;
   color: #EDF1F1;
+  text-shadow: 1px 2px 7px #4e4949;
 }
 body #contributeContainer h1 {
   margin-bottom: 5%;
@@ -287,6 +294,7 @@ body .footerContainer footer {
   margin-bottom: 15px;
 }
 body .contactPageContainer {
+  text-shadow: 1px 2px 7px #aba1a1;
   color: #0F1723;
 }
 body .contactPageContainer .usa {
