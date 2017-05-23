@@ -38,7 +38,42 @@ body {
 		}
 	}
 
+	#secondaryNav.affix {
+		background-color: @green;
+	    margin: 0px;
+	    width: 100%;
+	    z-index: 10;
+		    .navbar {
+		    	margin-bottom: 0;
+		    }
+	    	.navbar-nav {
 
+	    		margin-left: 0%;
+		    	a {
+		    		color: white;
+		    		font-size: 20px;
+		    	}
+		    }
+	}
+
+	#nav.affix {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index:10;
+	}
+
+	#nav {
+		.navbar .navbar-nav {
+		  display: inline-block;
+		  float: none;
+		  vertical-align: top;
+		}
+
+		.navbar .navbar-collapse {
+		  text-align: center;
+		}
+	}
 
 	.parallax-window {
 		min-height: 500px;
@@ -56,6 +91,7 @@ body {
 		}
 		.btn:hover {
 			background-color: @green;
+			color:@red;
 			transform: scale(1.025);
   			box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   			transition: all .2s;
@@ -72,9 +108,7 @@ body {
 	    }
 
 	    .nav {
-	    	width: 100%;
-	    	margin-left: 18%;
-
+/*	    	width: 100%;*/
 
 	    	a {
 	    		color: white;
@@ -82,29 +116,6 @@ body {
 	    		padding: 15px 40px;
 	    	}
 	    }
-	}
-	#secondaryNav.affix {
-		background-color: @green;
-	    margin: 0px;
-	    width: 100%;
-	    z-index: 10;
-		    .navbar {
-		    	margin-bottom: 0;
-		    }
-	    	.nav {
-	    		margin-left: 0%;
-		    	a {
-		    		color: white;
-		    		font-size: 20px;
-		    	}
-		    }
-	}
-
-	#nav.affix {
-		position: fixed;
-		top: 0;
-		width: 100%;
-		z-index:10;
 	}
 
 	.whatWeDoDiv {
@@ -336,9 +347,33 @@ body {
 		}
 	}
 
-
+	.contactPageContainer {
+		.usa {
+			padding-left: 15%;
+		}
+		.kenya {
+			padding-right: 15%;
+		}
+		color: @darkBlue;
+		.contactFooter {
+			div {
+				position: absolute;
+    			bottom: 0;
+    			h4 {
+    				font-size:15px;
+    			}
+			}
+		}
+	}
 
 }
+
+
+
+
+
+
+
 
 @media screen and (max-width: 990px) {
 	.profile {
