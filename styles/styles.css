@@ -98,8 +98,11 @@ body .meetOurTeamContainer .profile img {
   border-radius: 3px;
   box-shadow: 1px 1px 4px rgba(59, 54, 54, 0.84);
 }
-body .studentProfilesDiv {
-  margin-bottom: 2%;
+body .profileContainer #mainArea {
+  margin-top: 10%;
+}
+body .profileContainer #carousel-bounding-box {
+  background-color: #0F1723;
 }
 body .contactContainer {
   background-color: #424747;
@@ -242,4 +245,9 @@ body .footerContainer .bottomRow {
 body .footerContainer footer {
   text-align: center;
   margin-bottom: 15px;
+}
+body .hide-bullets {
+  list-style: none;
+  margin-left: -40px;
+  margin-top: 20px;
 }
