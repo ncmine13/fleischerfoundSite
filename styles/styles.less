@@ -1,4 +1,4 @@
-@red :#d22f25;
+/*@red :#d22f25;
 @translucentRed: rgba(210, 47, 37, 0.62);
 @green: #7E8F7C;
 @translucentGreen: rgba(126, 143, 124, 0.82);
@@ -6,11 +6,21 @@
 @gray: #424747;
 @lightGray: #EDF1F1;
 @darkBlue: #0F1723;
+*/
 
+@yellow: #f9ca46;
+@blue: #3f83a1;
+@red: #e84234;
+@green: #85ac33;
+
+@lightYellow: #F4E6C2;
+@lightBlue: #C9E5F1;
+@lightRed:#F7C7C4;
+@lightGreen:#EAF7CE;
 
 
 body {
-	background-color: @lightBlue;
+	background-color: white;
 	font-family: 'PT Sans', sans-serif;
 
 	.header {
@@ -39,7 +49,8 @@ body {
 	}
 
 	#secondaryNav.affix {
-		background-color: @green;
+		background-color: @lightGreen;
+		color:@blue;
 	    margin: 0px;
 	    width: 100%;
 	    z-index: 10;
@@ -50,7 +61,7 @@ body {
 
 	    		margin-left: 0%;
 		    	a {
-		    		color: white;
+		    		color: @blue;
 		    		font-size: 20px;
 		    	}
 		    }
@@ -75,32 +86,9 @@ body {
 		}
 	}
 
-	.parallax-window {
-		min-height: 500px;
-		background: transparent;
-		padding: 0px;
-		margin-bottom: 0px;
-
-		
-		.btn {
-			font-size: 40px;
-			color: @gray;
-			background-color: @translucentGreen;
-			padding: 10px 20px;
-			margin-top: 10%;
-		}
-		.btn:hover {
-			background-color: @green;
-			color:@red;
-			transform: scale(1.025);
-  			box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
-  			transition: all .2s;
-		}
-
-	}
-
 	#nav {
-		background-color: @green;
+		background-color: @lightYellow;
+		color:@blue;
 	    margin: 0px;
 	    width: 100%;
 	    .navbar {
@@ -111,12 +99,38 @@ body {
 /*	    	width: 100%;*/
 
 	    	a {
-	    		color: white;
+	    		color: @blue;
 	    		font-size: 20px;
 	    		padding: 15px 40px;
 	    	}
 	    }
 	}
+
+	.parallax-window {
+		min-height: 500px;
+		background: transparent;
+		padding: 0px;
+		margin-bottom: 0px;
+
+		
+		.btn {
+		    font-size: 50px;
+		    color: @lightBlue;
+		    background-color: @green;
+		    padding: 12px 24px;
+		    margin-top: 12%;
+		    box-shadow: 2px 2px 10px rgba(15, 14, 14, 0.74);
+		}
+		.btn:hover {
+			background-color: @blue;
+			color:@lightRed;
+			transform: scale(1.025);
+  			box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+  			transition: all .2s;
+		}
+
+	}
+
 
 	.whatWeDoDiv {
 		margin-top: 3%;
@@ -124,13 +138,53 @@ body {
 		.mainPimg {
 			margin: 5% 0%;
 		}
+		h1 {
+			color:@green;
+			font-size: 60px;
+		    letter-spacing: 2.5px;
+		    margin-bottom: 3%;
+		    text-shadow: 1px 2px 7px #aba1a1;
+		}
+		h2 {
+			color:@blue;
+			font-size: 35px;
+		    font-weight: bolder;
+		    letter-spacing: 1.5px;
+		    text-shadow: 1px 2px 7px #aba1a1;
+		}
+		p {
+			letter-spacing: 0.7px;
+    		padding: 0 20px;
+    		margin-top: 25px;
+    		margin-bottom:25px;
+		}
 	}	
 
 	.emailContainer {
-		padding: 5%;
+		padding: 7%;
+		background-color: @lightYellow;
 
-		.form-control {
-			width:70%;
+		.getInTouch {
+			text-align: left;
+			h1 {
+				color:@red;
+			}
+		}
+
+		.subscribe {
+			h1 {
+			color:@red;
+			text-align: right;
+			}
+			.form-control {
+				width:70%;
+				float:right;
+				margin:2% 0;
+			}
+			.submitButton {
+				clear:both;
+				float:right;
+			}
 		}
 	}
 
@@ -157,7 +211,7 @@ body {
 			margin: 8% 0;
 		}
 		#carousel-bounding-box {
-			background-color: @darkBlue;
+			background-color: @blue;
 			border-radius: 2px;
 			box-shadow: 1px 1px 4px rgba(59, 54, 54, 0.84);
 		}
@@ -194,7 +248,7 @@ body {
 	}
 
 	.contactContainer {
-		background-color: @gray;
+		background-color: @blue;
 		color: white;
 		position:absolute;
 		margin-bottom: 0px;
@@ -252,7 +306,7 @@ body {
 		height: 500px;
 		margin-top: 11%;
 		margin-bottom: 5%;
-		color: @lightGray;
+		color: @lightBlue;
 				text-shadow: 1px 2px 7px #4e4949;
 		h1 {
 			margin-bottom: 5%;
@@ -281,25 +335,25 @@ body {
 	}
 
 	.contributeFooter {
-		background-color: @lightGray;
+		background-color: @blue;
 		position: absolute;
 		margin-bottom: 0px;
 
 		h3 {
 			font-size: 30px;
-			color: @darkBlue;
+			color: @blue;
 			margin: 5%;
 		}
 		p {
-			color: @darkBlue;
+			color: @blue;
 			font-size: 20px;
 			margin: 0% 20% 8% 20%;
 		}
 		.copyright {
-			background-color: @gray;
+			background-color: @blue;
 			p {
 				font-size: 15px;
-				color: @lightGray;
+				color: @lightBlue;
 				letter-spacing: 0.7px;
 				margin-bottom: 4%;
 			}
@@ -308,11 +362,11 @@ body {
 			letter-spacing: 1px;
 			padding-top: 2%;
 			padding-bottom: 3%;
-			background-color: @gray;
+			background-color: @blue;
 			.subscription {
 				padding: 0% 7%;
 				p {
-					color: @lightGray;
+					color: @lightBlue;
 					margin: 0;
 					margin-bottom: 4%;
 					text-align: left;
@@ -320,12 +374,12 @@ body {
 				input {
 					width:60%;
 					border-radius: 3px;
-					color: @darkBlue;
+					color: @blue;
 				}
 			}
 			.emailAddress {	
 				p {
-					color: @lightGray;
+					color: @lightBlue;
 					text-align: right;
 					margin: 0% 0% 3% 0%;
 				}
@@ -336,7 +390,7 @@ body {
 
 
 	.footerContainer {
-		background-color: @gray;
+		background-color: @blue;
 		color: white;
 
 		.bottomRow {
@@ -351,6 +405,22 @@ body {
 	}
 
 	.contactPageContainer {
+		h1 {
+			font-size: 50px;
+			margin-bottom: 5%;
+		}
+		h2 {
+			font-size: 35px;
+		}
+		div {
+			p {
+				font-size: 20px;
+				margin-bottom:5%;
+			}
+		}
+		h3 {
+			margin-top: 10%;
+		}
 		text-shadow: 1px 2px 7px #aba1a1;
 		.usa {
 			padding-left: 15%;
@@ -358,13 +428,14 @@ body {
 		.kenya {
 			padding-right: 15%;
 		}
-		color: @darkBlue;
+		color: @blue;
 		.contactFooter {
 			div {
 				position: absolute;
     			bottom: 0;
     			h4 {
     				font-size:15px;
+
     			}
 			}
 		}
