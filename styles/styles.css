@@ -165,6 +165,9 @@ body .emailContainer .subscribe .submitButton {
 body .meetOurTeamContainer {
   text-shadow: 1px 2px 7px #aba1a1;
 }
+body .meetOurTeamContainer .row {
+  margin-top: 5%;
+}
 body .meetOurTeamContainer .profile {
   padding: 4%;
 }
@@ -376,6 +379,9 @@ body .contactPageContainer {
   color: #441717;
   text-shadow: 1px 2px 7px #aba1a1;
 }
+body .contactPageContainer .row:nth-child(1) {
+  margin-top: 5%;
+}
 body .contactPageContainer h1 {
   font-size: 50px;
   margin-bottom: 5%;
@@ -387,14 +393,14 @@ body .contactPageContainer div p {
   font-size: 20px;
   margin-bottom: 5%;
 }
-body .contactPageContainer h3 {
-  margin-top: 10%;
-}
 body .contactPageContainer .usa {
   padding-left: 15%;
 }
 body .contactPageContainer .kenya {
   padding-right: 15%;
+}
+body .contactPageContainer .contactFooter {
+  margin-top: 0;
 }
 body .contactPageContainer .contactFooter div {
   position: absolute;
