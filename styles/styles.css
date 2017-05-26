@@ -82,15 +82,15 @@ body .parallax-window {
 }
 body .parallax-window .btn {
   font-size: 50px;
-  color: #441717;
-  background-color: rgba(236, 230, 145, 0.8);
+  color: #F7C7C4;
+  background-color: #3f83a1;
   padding: 12px 24px;
   margin-top: 12%;
   box-shadow: 2px 2px 10px rgba(15, 14, 14, 0.74);
 }
 body .parallax-window .btn:hover {
-  background-color: #3f83a1;
-  color: #F9F7E6;
+  background-color: rgba(236, 230, 145, 0.8);
+  color: #3f83a1;
   transform: scale(1.025);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   transition: all .2s;
@@ -268,7 +268,6 @@ body .contributeBackground img {
   min-height: 50%;
 }
 body #contributeContainer {
-  height: 500px;
   margin-top: 11%;
   margin-bottom: 5%;
   color: #CEDACD;
@@ -473,7 +472,7 @@ body .contactPageContainer .contactFooter div h4 {
   }
   body .profileContainer h1 {
     margin-top: 15%;
-    font-size: 28px;
+    font-size: 22px;
   }
   body .vidBackground {
     padding: 10px;
@@ -510,6 +509,16 @@ body .contactPageContainer .contactFooter div h4 {
   body #contributeContainer select {
     color: #F9F7E6;
     margin-top: 5%;
+  }
+  body .contributeFooter .taxExempt {
+    padding: 7% 0;
+  }
+  body .contributeFooter .copyright p {
+    font-size: 12px;
+  }
+  body .contributeFooter .contributeContactRow {
+    padding-top: 5%;
+    padding-bottom: 0;
   }
   body .contributeFooter .contributeContactRow .emailAddress p {
     text-align: center;
@@ -549,6 +558,7 @@ body .contactPageContainer .contactFooter div h4 {
     font-size: 20px;
     letter-spacing: 1.5px;
     padding: 0;
+    margin-right: 0;
   }
   /*	#contributeContainer p {
 		margin: 2% 7% 8% 7%;
