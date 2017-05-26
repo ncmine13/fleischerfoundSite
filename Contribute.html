@@ -12,7 +12,7 @@
 	<div id="secondaryNav" class="container-fluid affix" style="top:0px">
 		<div class="navbar navbar-static">
 			<div class="container-fluid">
-				<a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></a>
+				<a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li><a href="index.html">Home</a></li>
@@ -42,14 +42,51 @@
 			</div>
 		</div>
 		<div class="row text-center">
-			<div class="col-sm-6">
-				<button class="btn-primary donate">Donate Now</button>
+			<div class="col-md-6 col-sm-12">
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+					<input type="hidden" name="edit_selector" data-aid="EDIT_PANEL_EDIT_PAYMENT_ICON">
+					<input type="hidden" name="business" value="donations@thefleischerfoundation.org">
+					<input type="hidden" name="cmd" value="_donations">
+					<input type="hidden" name="item_name" value="The Fleischer Foundation">
+					<input type="hidden" name="item_number" value>
+					<input type="hidden" name="amount" value="0.00" data-aid="PAYMENT_HIDDEN_AMOUNT">
+					<input type="hidden" name="shipping" value="0.00">
+					<input type="hidden" name="currency_code" value="USD" data-aid="PAYMENT_HIDDEN_CURRENCY">
+					<input type="hidden" name="rm" value="0">
+					<input type="hidden" name="return" value="http://thefleischerfoundation.org/contribute">
+					<input type="hidden" name="cancel-return" value="http://thefleischerfoundation.org/contribute">
+					<input type="hidden" name="cbt" value="Return to The Fleischer Foundation">
+					<div data-route="settings/donateButtonLabel">
+					<button class="donate" name="submit" data-aid="PAYMENT_PAYPALBUTTON_RENDERED">
+						Donate Now
+					</button>
+					</div>
+				</form>
+				<img data-aid="PAYMENT_CREDIT_CARD_BADGES_RENDERED" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppmcvdam.png"> 
 			</div>
-			<div class="col-sm-6">
-				<button class="btn-primary donate">Make a recurring donation</button>
+			<div class="col-md-6 col-sm-12">
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="hosted_button_id" value="M8N45G39DHE7Y">
+					<input type="hidden" name="on0" value="">
+					<select name="os0">
+						<option value="Recurring Donation">Recurring Donation : $10.00 USD - monthly</option>
+						<option value="Recurring Donation">Recurring Donation : $25.00 USD - monthly</option>
+						<option value="Recurring Donation">Recurring Donation : $50.00 USD - monthly</option>
+						<option value="Recurring Donation">Recurring Donation : $85.00 USD - monthly</option>
+						<option value="Recurring Donation">Recurring Donation : $100.00 USD - monthly</option>
+					</select>
+					<input type="hidden" name="currency_code" value="USD">
+					<div>
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					</div>
+				</form>
 			</div>	
 		</div>
 	</div>
+
+
 
 	<div class="container-fluid contributeFooter">
 		<div class="row text-center">
@@ -60,18 +97,18 @@
 				<p>The Fleischer Foundation is a 501(c)(3) nonprofit organization under the United States of America Internal Revenue Service (Federal Tax ID 81-4218767). As such, all donations are tax deductible via IRC Section 170.</p>
 			</div>
 		</div>
-		<div class="row contributeContactRow">
-			<div class="col-sm-6 emailAddress">
+		<div class="row contributeContactRow text-center">
+			<div class="col-md-6 col-sm-12 emailAddress">
 				<p>donations@thefleischerfoundation.org</p>
 				<p>+1 (312)-967-9426</p>
 			</div>
-			<div class="col-sm-6 subscription">
+			<div class="col-md-6 col-sm-12 subscription text-center">
 				<p>Subscribe to our mailing list:</p>
 				<input type="email" class="form-control" placeholder="Enter email">
 				<input type="submit" class="form-control">
 			</div>		
 		</div>
-		<div class="row text-center copyright">
+		<div class="row text-center copyright text-center">
 			<div class="col-sm-12">
 				<p>Copyright © 2017 The Fleischer Foundation - All Rights Reserved.</p>
 			</div>

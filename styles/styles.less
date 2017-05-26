@@ -1,6 +1,6 @@
 /*@red :#d22f25;
 @translucentRed: rgba(210, 47, 37, 0.62);
-@green: #7E8F7C;
+
 @translucentGreen: rgba(126, 143, 124, 0.82);
 @lightBlue: #F4F5F5;
 @gray: #424747;
@@ -8,16 +8,21 @@
 @darkBlue: #0F1723;
 */
 
-@yellow: #f9ca46;
+@yellow: #ECE691;
 @blue: #3f83a1;
 @red: #e84234;
-@green: #85ac33;
+@green: #7E8F7C;
 
-@lightYellow: #F4E6C2;
+@lightYellow: #F9F7E6;
 @lightBlue: #C9E5F1;
 @lightRed:#F7C7C4;
-@lightGreen:#EAF7CE;
+@lightGreen:#CEDACD;
 
+@translucentGreen: rgba(126, 143, 124, 0.83);
+@translucentRed: rgba(232, 66, 52, 0.83);
+@translucentYellow: rgba(236, 230, 145, 0.8);
+
+@darkRed: #441717;
 
 body {
 	background-color: white;
@@ -62,6 +67,7 @@ body {
 	    		margin-left: 0%;
 		    	a {
 		    		color: @blue;
+		    		text-decoration: none;
 		    		font-size: 20px;
 		    	}
 		    }
@@ -87,8 +93,7 @@ body {
 	}
 
 	#nav {
-		background-color: @lightYellow;
-		color:@blue;
+		background-color: @lightGreen;
 	    margin: 0px;
 	    width: 100%;
 	    .navbar {
@@ -96,8 +101,6 @@ body {
 	    }
 
 	    .nav {
-/*	    	width: 100%;*/
-
 	    	a {
 	    		color: @blue;
 	    		font-size: 20px;
@@ -115,15 +118,15 @@ body {
 		
 		.btn {
 		    font-size: 50px;
-		    color: @lightBlue;
-		    background-color: @green;
+		    color: @darkRed;
+		    background-color: @translucentYellow;
 		    padding: 12px 24px;
 		    margin-top: 12%;
 		    box-shadow: 2px 2px 10px rgba(15, 14, 14, 0.74);
 		}
 		.btn:hover {
 			background-color: @blue;
-			color:@lightRed;
+			color:@lightYellow;
 			transform: scale(1.025);
   			box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   			transition: all .2s;
@@ -161,19 +164,39 @@ body {
 	}	
 
 	.emailContainer {
-		padding: 7%;
+		padding: 5% 7%;
 		background-color: @lightYellow;
 
 		.getInTouch {
+			padding: 0 5%;
 			text-align: left;
+
+			div {
+				margin-right:15%;
+				text-align: right;
+				h3{
+					color:@darkRed;
+					margin-right: 10%;
+				} 
+				p {
+					color:@darkRed;
+					margin-left:4%;
+					font-size: 20px;
+					span {
+						color:@green;
+						font-weight: bold;
+					}
+				}
+			}
+
 			h1 {
-				color:@red;
+				color:@blue;
 			}
 		}
 
 		.subscribe {
 			h1 {
-			color:@red;
+			color:@blue;
 			text-align: right;
 			}
 			.form-control {
@@ -211,6 +234,8 @@ body {
 			margin: 8% 0;
 		}
 		#carousel-bounding-box {
+			padding: 0;
+			width: 40%;
 			background-color: @blue;
 			border-radius: 2px;
 			box-shadow: 1px 1px 4px rgba(59, 54, 54, 0.84);
@@ -306,7 +331,7 @@ body {
 		height: 500px;
 		margin-top: 11%;
 		margin-bottom: 5%;
-		color: @lightBlue;
+		color: @lightGreen;
 				text-shadow: 1px 2px 7px #4e4949;
 		h1 {
 			margin-bottom: 5%;
@@ -316,6 +341,10 @@ body {
 			margin: 2% 13% 8% 13%;
 			font-size: 22px;
 		}
+		select {
+			color: black;
+    		margin-bottom: 5%;
+		}
 		.donate {
 			width: 250px;
 			height: 100px;
@@ -323,7 +352,7 @@ body {
 			background-color: @red;
 			border: none;
 		    border-radius: 3px;
-		    font-size: 20px;
+		    font-size: 35px;
 		    box-shadow: 1px 1px 4px rgba(59, 54, 54, 0.84);
 		}
 		.donate:hover {
@@ -332,20 +361,24 @@ body {
   			box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   			transition: all .3s;
 		}
+		img {
+			max-width: 250px;
+    		margin-top: 5%;
+		}
 	}
 
 	.contributeFooter {
-		background-color: @blue;
+		background-color: @lightYellow;
 		position: absolute;
 		margin-bottom: 0px;
 
 		h3 {
 			font-size: 30px;
-			color: @blue;
+			color: @darkRed;
 			margin: 5%;
 		}
 		p {
-			color: @blue;
+			color: @darkRed;
 			font-size: 20px;
 			margin: 0% 20% 8% 20%;
 		}
@@ -394,17 +427,25 @@ body {
 		color: white;
 
 		.bottomRow {
-		    margin-bottom: 4%;
-		    margin-top: 4%;
+		    margin-bottom: 3%;
+		    margin-top: 3%;
+
+		    .bronzeImg {
+		    	margin-top: 2%
+		    }
+		    p {
+		    	font-size: 16px;
+		    }
 		}
 
 		footer {
 			text-align: center;
-			margin-bottom: 15px;
+			margin-bottom: 20px;
 		}
 	}
 
 	.contactPageContainer {
+		color: @darkRed;
 		h1 {
 			font-size: 50px;
 			margin-bottom: 5%;
@@ -428,7 +469,6 @@ body {
 		.kenya {
 			padding-right: 15%;
 		}
-		color: @blue;
 		.contactFooter {
 			div {
 				position: absolute;
@@ -457,4 +497,207 @@ body {
 		}
 	}
 
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		.header {
+			div {
+				display: flex;
+		    	flex-direction: row;
+		    	margin-bottom: 10px;
+
+		    	h1 {
+		    		font-size:32px;
+		    		padding-top:0;
+		    		text-align:right;
+		    	}
+			}
+
+			.logo img {
+				margin-left: 0%;
+	    		max-width: 100px;
+	    		max-height: 82px;
+	    		margin-top:20px;	
+
+    		}
+		}
+		.parallax-window {
+			min-height: 160px;
+			.btn {
+				font-size:38px;
+			}
+		}
+		.whatWeDoDiv {
+			h1 {
+				font-size: 40px;
+			}
+			h2 {
+				font-size: 30px;
+			}
+		}
+		#nav {
+			.nav {
+				a {
+					font-size:15px;
+					padding: 10px 0;
+				}
+			}
+		}
+		#secondaryNav.affix {
+			.navbar-nav {
+				a {
+					font-size: 15px;
+				}
+			}
+		}
+		.emailContainer {
+			.subscribe {
+				h1 {
+					text-align:left;
+					font-size:25px;
+				}
+			}
+			.getInTouch {
+				h1 {
+					font-size:25px;
+					}
+				div {
+					margin-right:0;
+					p {
+						font-size: 15px;
+					}
+				}
+			}
+		}
+		.footerContainer {
+			.bottomRow {
+				h1 {
+					font-size: 20px;
+				}
+				p {
+					font-size:12px;
+				}
+			}
+		}
+		.profileContainer {
+			#carousel-bounding-box {
+				width:100%;
+			}
+			#carousel-text {
+				h2 {
+					margin-left:0;
+					margin-top:30px;
+				}
+			}
+			h1 {
+			    margin-top: 15%;
+			    font-size: 28px;
+			}
+		}
+		.vidBackground {
+			padding:10px;
+		}
+		.contactContainer {
+			.contactRowInfo {
+				display:block;
+				padding: 20px;
+
+				.subscriptionInput {
+					width:100%;
+    				margin-bottom: 15px;
+				}
+			}
+		}
+		.meetOurTeamContainer {
+			.row {
+				margin-top:20%;
+			}
+		}
+		#contributeContainer {
+			h1 {
+				font-size: 40px;
+    			margin-top: 15%
+			}
+			p {
+				margin: 2% 7% 8% 7%;
+			    font-size: 15px;
+			}
+			.donate {
+				font-size: 14px;
+    			margin: 5% 6%;
+    			width:150px;
+    			height:60px;
+			}
+			img {
+				max-width: 140px;
+    			margin-top: 0%;
+			}
+			select {
+				color:@lightYellow;
+				margin-top:5%;
+			}
+		}
+		.contributeFooter {
+			.contributeContactRow {
+				.emailAddress {
+					p {
+						text-align: center;
+					}
+				}
+				.subscription {
+					input {
+						width: 80%;
+					    margin: 0 10%;
+					}
+				}
+			}
+			p {
+				font-size: 14px;
+	    		margin: 5% 6%;
+			}
+		}
+		.contactPageContainer {
+			h1 {
+				font-size:40px;
+				margin-top: 23%;
+				margin-bottom:2%;
+			}
+			h3 {
+				font-size:16px;
+			}
+			div {
+				p {
+					margin-bottom:3%
+				}
+			}
+			.usa {
+				padding:0;
+			}
+			.kenya {
+				padding:0;
+			}
+			.contactFooter {
+				div {
+					position:relative;
+					h4 {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+
+
+
+	.navbar-toggle {
+		font-size:20px;
+		letter-spacing: 1.5px;
+		padding:0;
+	}
+
+/*	#contributeContainer p {
+		margin: 2% 7% 8% 7%;
+		font-size: 16px;
+	}*/
 }

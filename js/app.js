@@ -22,11 +22,13 @@ minimized_elements.each(function(){
     
 }); 
 
+
 $('a.more', minimized_elements).click(function(event){
     event.preventDefault();
     $(this).hide().prev().hide();
-    $(this).next().show();        
+    $(this).next().show();         
 });
+
 
 $('a.less', minimized_elements).click(function(event){
     event.preventDefault();
