@@ -127,9 +127,28 @@ body .whatWeDoDiv p {
 body .emailContainer {
   padding: 5% 7%;
 }
+body .emailContainer form label.subscribeHome {
+  font-size: 30px;
+  font-weight: lighter;
+}
+body .emailContainer form input {
+  float: right;
+  width: 60%;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+body .emailContainer form .clear {
+  clear: both;
+}
+body .emailContainer form .clear input {
+  border: none;
+}
 body .emailContainer .getInTouch {
   padding: 0 5%;
   text-align: left;
+}
+body .emailContainer .getInTouch h1 {
+  margin: 0;
 }
 body .emailContainer .getInTouch div {
   margin-right: 15%;
@@ -365,7 +384,7 @@ body .contributeFooter .contributeContactRow .emailAddress p {
   margin: 0% 0% 3% 0%;
 }
 body .footerContainer {
-  background-color: #7E8F7C;
+  background-color: #424747;
   color: white;
 }
 body .footerContainer .bottomRow {
