@@ -30,6 +30,7 @@ $('a.more', minimized_elements).click(function(event){
 });
 
 
+
 $('a.less', minimized_elements).click(function(event){
     event.preventDefault();
     $(this).parent().hide().prev().show().prev().show();    
@@ -49,7 +50,9 @@ $('[id^=carousel-selector-]').click( function(){
 
 // When the carousel slides, auto update the text
 $('#myCarousel').on('slid.bs.carousel', function (e) {
-         var id = $('.item.active').data('slide-number');
-        $('#carousel-text').html($('#slide-content-'+id).html());
+        var id = $('.item.active').data('slide-number');
+        console.log($('.item.active').data('slide-number'))
+        var lol = $('#carousel-text').html($('#slide-content-'+id).html());
+        console.log(lol)
 });
 

@@ -1,14 +1,16 @@
-/*@red :#d22f25;
+@red :#d22f25;
 @translucentRed: rgba(210, 47, 37, 0.62);
+@darkRed: #441717;
 
+@green: #7E8F7C;
 @translucentGreen: rgba(126, 143, 124, 0.82);
 @lightBlue: #F4F5F5;
 @gray: #424747;
 @lightGray: #EDF1F1;
 @darkBlue: #0F1723;
-*/
 
-@yellow: #ECE691;
+
+/*@yellow: #ECE691;
 @blue: #3f83a1;
 @red: #e84234;
 @green: #7E8F7C;
@@ -20,9 +22,8 @@
 
 @translucentGreen: rgba(126, 143, 124, 0.83);
 @translucentRed: rgba(232, 66, 52, 0.83);
-@translucentYellow: rgba(236, 230, 145, 0.8);
+@translucentYellow: rgba(236, 230, 145, 0.8);*/
 
-@darkRed: #441717;
 
 body {
 	background-color: white;
@@ -54,8 +55,7 @@ body {
 	}
 
 	#secondaryNav.affix {
-		background-color: @lightGreen;
-		color:@blue;
+		background-color: @translucentGreen;
 	    margin: 0px;
 	    width: 100%;
 	    z-index: 10;
@@ -66,7 +66,7 @@ body {
 
 	    		margin-left: 0%;
 		    	a {
-		    		color: @blue;
+		    		color: @lightGray;
 		    		text-decoration: none;
 		    		font-size: 20px;
 		    	}
@@ -93,7 +93,7 @@ body {
 	}
 
 	#nav {
-		background-color: @lightGreen;
+		background-color: @translucentGreen;
 	    margin: 0px;
 	    width: 100%;
 	    .navbar {
@@ -102,7 +102,7 @@ body {
 
 	    .nav {
 	    	a {
-	    		color: @blue;
+	    		color: @lightGray;
 	    		font-size: 20px;
 	    		padding: 15px 40px;
 	    	}
@@ -118,15 +118,15 @@ body {
 		
 		.btn {
 		    font-size: 50px;
-		    color: @lightRed;
-		    background-color: @blue;
+		    color: @gray;
+		    background-color: @red;
 		    padding: 12px 24px;
 		    margin-top: 12%;
 		    box-shadow: 2px 2px 10px rgba(15, 14, 14, 0.74);
 		}
 		.btn:hover {
-			background-color: @translucentYellow;
-			color:@blue;
+			background-color: @green;
+			color:@darkBlue;
 			transform: scale(1.025);
   			box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   			transition: all .2s;
@@ -149,7 +149,7 @@ body {
 		    text-shadow: 1px 2px 7px #aba1a1;
 		}
 		h2 {
-			color:@blue;
+			color:@gray;
 			font-size: 35px;
 		    font-weight: bolder;
 		    letter-spacing: 1.5px;
@@ -165,7 +165,6 @@ body {
 
 	.emailContainer {
 		padding: 5% 7%;
-		background-color: @lightYellow;
 
 		.getInTouch {
 			padding: 0 5%;
@@ -190,13 +189,13 @@ body {
 			}
 
 			h1 {
-				color:@blue;
+				color:@darkBlue;
 			}
 		}
 
 		.subscribe {
 			h1 {
-			color:@blue;
+			color:@darkBlue;
 			text-align: right;
 			}
 			.form-control {
@@ -223,6 +222,9 @@ body {
 				border-radius: 360px;
 				box-shadow: 1px 1px 8px rgba(59, 54, 54, 0.74);
 			}
+			h1 {
+				color:@red;
+			}
 			p {
 				letter-spacing: 1px;
 				line-height: 20px;
@@ -233,18 +235,19 @@ body {
 
 	.profileContainer {
 		text-shadow: 1px 2px 7px #aba1a1;
-		#mainArea {
-			margin: 8% 0;
-		}
-		#carousel-bounding-box {
-			padding: 0;
-			width: 40%;
-			background-color: @blue;
-			border-radius: 2px;
-			box-shadow: 1px 1px 4px rgba(59, 54, 54, 0.84);
-		}
-		h1 {
+		.studentsH1 {
+			margin-top: 6%;
 			margin-bottom: 4%;
+		}
+		.studentInfo {
+			margin-top:-20px;
+			.thumbnails {
+				margin: 2%;
+    			margin-bottom: 5%;
+    			.thumbnail {
+    				margin:5%;
+    			}
+			}
 		}
 		#carousel-text {
 			h2 {
@@ -252,9 +255,10 @@ body {
 				font-weight: bold;
 				color: @red;
 				letter-spacing: 2.5px;
-				margin-left: 10%;
-
 			}
+		}
+		.carousel-control {
+			background: none !important;
 		}
 
 		.hide-bullets {
@@ -276,7 +280,7 @@ body {
 	}
 
 	.contactContainer {
-		background-color: @blue;
+		background-color: @gray;
 		color: white;
 		position:absolute;
 		margin-bottom: 0px;
@@ -333,8 +337,8 @@ body {
 	#contributeContainer {
 		margin-top: 11%;
 		margin-bottom: 5%;
-		color: @lightGreen;
-				text-shadow: 1px 2px 7px #4e4949;
+		color: @lightGray;
+		text-shadow: 1px 2px 7px #4e4949;
 		h1 {
 			margin-bottom: 5%;
 			font-size: 50px;
@@ -370,7 +374,7 @@ body {
 	}
 
 	.contributeFooter {
-		background-color: @lightYellow;
+		background-color: white;
 		position: absolute;
 		margin-bottom: 0px;
 
@@ -385,23 +389,24 @@ body {
 			margin: 0% 20% 8% 20%;
 		}
 		.copyright {
-			background-color: @blue;
-			p {
-				font-size: 15px;
-				color: @lightBlue;
-				letter-spacing: 0.7px;
-				margin-bottom: 4%;
+			div {
+				margin-top:5%;
+				p {
+					font-size: 15px;
+					color: white;
+					letter-spacing: 0.7px;
+					margin-bottom: 4%;
+				}
 			}
 		}
 		.contributeContactRow {
 			letter-spacing: 1px;
 			padding-top: 2%;
-			padding-bottom: 3%;
-			background-color: @blue;
+			background-color: @gray;
 			.subscription {
 				padding: 0% 7%;
 				p {
-					color: @lightBlue;
+					color: @lightGray;
 					margin: 0;
 					margin-bottom: 4%;
 					text-align: left;
@@ -409,12 +414,12 @@ body {
 				input {
 					width:60%;
 					border-radius: 3px;
-					color: @blue;
+					color: @lightGray;
 				}
 			}
 			.emailAddress {	
 				p {
-					color: @lightBlue;
+					color: @lightGray;
 					text-align: right;
 					margin: 0% 0% 3% 0%;
 				}
@@ -425,7 +430,7 @@ body {
 
 
 	.footerContainer {
-		background-color: @blue;
+		background-color: @green;
 		color: white;
 
 		.bottomRow {
@@ -637,7 +642,7 @@ body {
     			margin-top: 0%;
 			}
 			select {
-				color:@lightYellow;
+				color:@translucentGreen;
 				margin-top:5%;
 			}
 		}

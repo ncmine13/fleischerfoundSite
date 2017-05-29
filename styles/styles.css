@@ -1,12 +1,16 @@
-/*@red :#d22f25;
-@translucentRed: rgba(210, 47, 37, 0.62);
+/*@yellow: #ECE691;
+@blue: #3f83a1;
+@red: #e84234;
+@green: #7E8F7C;
 
-@translucentGreen: rgba(126, 143, 124, 0.82);
-@lightBlue: #F4F5F5;
-@gray: #424747;
-@lightGray: #EDF1F1;
-@darkBlue: #0F1723;
-*/
+@lightYellow: #F9F7E6;
+@lightBlue: #C9E5F1;
+@lightRed:#F7C7C4;
+@lightGreen:#CEDACD;
+
+@translucentGreen: rgba(126, 143, 124, 0.83);
+@translucentRed: rgba(232, 66, 52, 0.83);
+@translucentYellow: rgba(236, 230, 145, 0.8);*/
 body {
   background-color: white;
   font-family: 'PT Sans', sans-serif;
@@ -25,13 +29,12 @@ body .header .logo img {
 body .header h1 {
   padding-top: 5%;
   font-family: 'Fjalla One', sans-serif;
-  color: #e84234;
+  color: #d22f25;
   font-size: 60px;
   letter-spacing: 1.5px;
 }
 body #secondaryNav.affix {
-  background-color: #CEDACD;
-  color: #3f83a1;
+  background-color: rgba(126, 143, 124, 0.82);
   margin: 0px;
   width: 100%;
   z-index: 10;
@@ -43,7 +46,7 @@ body #secondaryNav.affix .navbar-nav {
   margin-left: 0%;
 }
 body #secondaryNav.affix .navbar-nav a {
-  color: #3f83a1;
+  color: #EDF1F1;
   text-decoration: none;
   font-size: 20px;
 }
@@ -62,7 +65,7 @@ body #nav .navbar .navbar-collapse {
   text-align: center;
 }
 body #nav {
-  background-color: #CEDACD;
+  background-color: rgba(126, 143, 124, 0.82);
   margin: 0px;
   width: 100%;
 }
@@ -70,7 +73,7 @@ body #nav .navbar {
   margin-bottom: 0;
 }
 body #nav .nav a {
-  color: #3f83a1;
+  color: #EDF1F1;
   font-size: 20px;
   padding: 15px 40px;
 }
@@ -82,15 +85,15 @@ body .parallax-window {
 }
 body .parallax-window .btn {
   font-size: 50px;
-  color: #F7C7C4;
-  background-color: #3f83a1;
+  color: #424747;
+  background-color: #d22f25;
   padding: 12px 24px;
   margin-top: 12%;
   box-shadow: 2px 2px 10px rgba(15, 14, 14, 0.74);
 }
 body .parallax-window .btn:hover {
-  background-color: rgba(236, 230, 145, 0.8);
-  color: #3f83a1;
+  background-color: #7E8F7C;
+  color: #0F1723;
   transform: scale(1.025);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.26), 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   transition: all .2s;
@@ -109,7 +112,7 @@ body .whatWeDoDiv h1 {
   text-shadow: 1px 2px 7px #aba1a1;
 }
 body .whatWeDoDiv h2 {
-  color: #3f83a1;
+  color: #424747;
   font-size: 35px;
   font-weight: bolder;
   letter-spacing: 1.5px;
@@ -123,7 +126,6 @@ body .whatWeDoDiv p {
 }
 body .emailContainer {
   padding: 5% 7%;
-  background-color: #F9F7E6;
 }
 body .emailContainer .getInTouch {
   padding: 0 5%;
@@ -147,10 +149,10 @@ body .emailContainer .getInTouch div p span {
   font-weight: bold;
 }
 body .emailContainer .getInTouch h1 {
-  color: #3f83a1;
+  color: #0F1723;
 }
 body .emailContainer .subscribe h1 {
-  color: #3f83a1;
+  color: #0F1723;
   text-align: right;
 }
 body .emailContainer .subscribe .form-control {
@@ -176,6 +178,9 @@ body .meetOurTeamContainer .profile img {
   border-radius: 360px;
   box-shadow: 1px 1px 8px rgba(59, 54, 54, 0.74);
 }
+body .meetOurTeamContainer .profile h1 {
+  color: #d22f25;
+}
 body .meetOurTeamContainer .profile p {
   letter-spacing: 1px;
   line-height: 20px;
@@ -183,25 +188,28 @@ body .meetOurTeamContainer .profile p {
 body .profileContainer {
   text-shadow: 1px 2px 7px #aba1a1;
 }
-body .profileContainer #mainArea {
-  margin: 8% 0;
-}
-body .profileContainer #carousel-bounding-box {
-  padding: 0;
-  width: 40%;
-  background-color: #3f83a1;
-  border-radius: 2px;
-  box-shadow: 1px 1px 4px rgba(59, 54, 54, 0.84);
-}
-body .profileContainer h1 {
+body .profileContainer .studentsH1 {
+  margin-top: 6%;
   margin-bottom: 4%;
+}
+body .profileContainer .studentInfo {
+  margin-top: -20px;
+}
+body .profileContainer .studentInfo .thumbnails {
+  margin: 2%;
+  margin-bottom: 5%;
+}
+body .profileContainer .studentInfo .thumbnails .thumbnail {
+  margin: 5%;
 }
 body .profileContainer #carousel-text h2 {
   font-size: 45px;
   font-weight: bold;
-  color: #e84234;
+  color: #d22f25;
   letter-spacing: 2.5px;
-  margin-left: 10%;
+}
+body .profileContainer .carousel-control {
+  background: none !important;
 }
 body .profileContainer .hide-bullets {
   list-style: none;
@@ -220,7 +228,7 @@ body .profileContainer .hide-bullets li .thumbnail {
   margin-left: 0;
 }
 body .contactContainer {
-  background-color: #3f83a1;
+  background-color: #424747;
   color: white;
   position: absolute;
   margin-bottom: 0px;
@@ -237,7 +245,7 @@ body .contactContainer .contactRowInfo .subscriptionInput {
 }
 body .contactContainer .contactRowInfo button {
   padding: 10px 20px;
-  background-color: #e84234;
+  background-color: #d22f25;
   border: none;
   border-radius: 3px;
   font-size: 20px;
@@ -273,7 +281,7 @@ body .contributeBackground img {
 body #contributeContainer {
   margin-top: 11%;
   margin-bottom: 5%;
-  color: #CEDACD;
+  color: #EDF1F1;
   text-shadow: 1px 2px 7px #4e4949;
 }
 body #contributeContainer h1 {
@@ -292,7 +300,7 @@ body #contributeContainer .donate {
   width: 250px;
   height: 100px;
   padding: 20px 20px;
-  background-color: #e84234;
+  background-color: #d22f25;
   border: none;
   border-radius: 3px;
   font-size: 35px;
@@ -309,7 +317,7 @@ body #contributeContainer img {
   margin-top: 5%;
 }
 body .contributeFooter {
-  background-color: #F9F7E6;
+  background-color: white;
   position: absolute;
   margin-bottom: 0px;
 }
@@ -323,26 +331,25 @@ body .contributeFooter p {
   font-size: 20px;
   margin: 0% 20% 8% 20%;
 }
-body .contributeFooter .copyright {
-  background-color: #3f83a1;
+body .contributeFooter .copyright div {
+  margin-top: 5%;
 }
-body .contributeFooter .copyright p {
+body .contributeFooter .copyright div p {
   font-size: 15px;
-  color: #C9E5F1;
+  color: white;
   letter-spacing: 0.7px;
   margin-bottom: 4%;
 }
 body .contributeFooter .contributeContactRow {
   letter-spacing: 1px;
   padding-top: 2%;
-  padding-bottom: 3%;
-  background-color: #3f83a1;
+  background-color: #424747;
 }
 body .contributeFooter .contributeContactRow .subscription {
   padding: 0% 7%;
 }
 body .contributeFooter .contributeContactRow .subscription p {
-  color: #C9E5F1;
+  color: #EDF1F1;
   margin: 0;
   margin-bottom: 4%;
   text-align: left;
@@ -350,15 +357,15 @@ body .contributeFooter .contributeContactRow .subscription p {
 body .contributeFooter .contributeContactRow .subscription input {
   width: 60%;
   border-radius: 3px;
-  color: #3f83a1;
+  color: #EDF1F1;
 }
 body .contributeFooter .contributeContactRow .emailAddress p {
-  color: #C9E5F1;
+  color: #EDF1F1;
   text-align: right;
   margin: 0% 0% 3% 0%;
 }
 body .footerContainer {
-  background-color: #3f83a1;
+  background-color: #7E8F7C;
   color: white;
 }
 body .footerContainer .bottomRow {
@@ -513,7 +520,7 @@ body .contactPageContainer .contactFooter div h4 {
     margin-top: 0%;
   }
   body #contributeContainer select {
-    color: #F9F7E6;
+    color: rgba(126, 143, 124, 0.82);
     margin-top: 5%;
   }
   body .contributeFooter .taxExempt {
