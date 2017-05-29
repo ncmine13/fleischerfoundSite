@@ -26,6 +26,17 @@
 
 
 body {
+
+	#bg {
+		min-height: 100%;
+  		min-width: 1024px;
+  		width: 100%;
+ 		height: auto;
+    	position: fixed;
+		top: 0;
+		left: 0;
+	}
+
 	background-color: white;
 	font-family: 'PT Sans', sans-serif;
 
@@ -255,6 +266,7 @@ body {
 	}
 
 	.profileContainer {
+		margin-bottom: 5%;
 		text-shadow: 1px 2px 7px #aba1a1;
 		.studentsH1 {
 			margin-top: 6%;
@@ -303,25 +315,46 @@ body {
 	.contactContainer {
 		background-color: @gray;
 		color: white;
-		position:absolute;
-		margin-bottom: 0px;
-		width:100%;
+		position: absolute;
+    	width: 100%;
+    	padding: 1% 5%;
 		.contactRowInfo {
 			margin-top: 2%;
 			margin-bottom: 2%;
 			display: flex;
     		align-items: center;
-			.subscriptionInput {
-				width: 50%;
-			}
-
+    		p {
+    			margin:0;
+    			font-size: 17px;
+    		}
+    		form {
+    			label {
+    				font-weight: lighter;
+    			}
+				input {
+					float:right;
+					width: 50%;
+					border-radius:3px;
+					padding: 5px 5px;
+				}
+				.clear {
+					clear: both;
+					input {
+						border: none;
+					}
+				}
+    		}
 			button {
 				padding:10px 20px;
 				background-color: @red;
 				border: none;
 			    border-radius: 3px;
-			    font-size: 20px;
 			    box-shadow: 1px 1px 4px rgba(59, 54, 54, 0.84);
+			    a {
+			    	font-size: 30px;
+			    	text-decoration: none;
+			    	color:@lightGray;
+			    }
 			}
 			button:hover {
 				transform: scale(1.025);
@@ -394,6 +427,18 @@ body {
 		}
 	}
 
+	.copyright {
+		div {
+			margin-top:4%;
+			p {
+				font-size: 14px;
+				color: white;
+				letter-spacing: 0.7px;
+				margin-bottom: 4%;
+			}
+		}
+	}
+
 	.contributeFooter {
 		background-color: white;
 		position: absolute;
@@ -408,17 +453,6 @@ body {
 			color: @darkRed;
 			font-size: 20px;
 			margin: 0% 20% 8% 20%;
-		}
-		.copyright {
-			div {
-				margin-top:5%;
-				p {
-					font-size: 15px;
-					color: white;
-					letter-spacing: 0.7px;
-					margin-bottom: 4%;
-				}
-			}
 		}
 		.contributeContactRow {
 			letter-spacing: 1px;
@@ -610,9 +644,7 @@ body {
 			}
 		}
 		.profileContainer {
-			#carousel-bounding-box {
-				width:100%;
-			}
+
 			#carousel-text {
 				h2 {
 					margin-left:0;
@@ -632,10 +664,7 @@ body {
 				display:block;
 				padding: 20px;
 
-				.subscriptionInput {
-					width:100%;
-    				margin-bottom: 15px;
-				}
+
 			}
 		}
 		.meetOurTeamContainer {

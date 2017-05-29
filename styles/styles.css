@@ -15,6 +15,15 @@ body {
   background-color: white;
   font-family: 'PT Sans', sans-serif;
 }
+body #bg {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 body .header {
   padding-top: 3%;
 }
@@ -205,6 +214,7 @@ body .meetOurTeamContainer .profile p {
   line-height: 20px;
 }
 body .profileContainer {
+  margin-bottom: 5%;
   text-shadow: 1px 2px 7px #aba1a1;
 }
 body .profileContainer .studentsH1 {
@@ -250,8 +260,8 @@ body .contactContainer {
   background-color: #424747;
   color: white;
   position: absolute;
-  margin-bottom: 0px;
   width: 100%;
+  padding: 1% 5%;
 }
 body .contactContainer .contactRowInfo {
   margin-top: 2%;
@@ -259,16 +269,36 @@ body .contactContainer .contactRowInfo {
   display: flex;
   align-items: center;
 }
-body .contactContainer .contactRowInfo .subscriptionInput {
+body .contactContainer .contactRowInfo p {
+  margin: 0;
+  font-size: 17px;
+}
+body .contactContainer .contactRowInfo form label {
+  font-weight: lighter;
+}
+body .contactContainer .contactRowInfo form input {
+  float: right;
   width: 50%;
+  border-radius: 3px;
+  padding: 5px 5px;
+}
+body .contactContainer .contactRowInfo form .clear {
+  clear: both;
+}
+body .contactContainer .contactRowInfo form .clear input {
+  border: none;
 }
 body .contactContainer .contactRowInfo button {
   padding: 10px 20px;
   background-color: #d22f25;
   border: none;
   border-radius: 3px;
-  font-size: 20px;
   box-shadow: 1px 1px 4px rgba(59, 54, 54, 0.84);
+}
+body .contactContainer .contactRowInfo button a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #EDF1F1;
 }
 body .contactContainer .contactRowInfo button:hover {
   transform: scale(1.025);
@@ -335,6 +365,15 @@ body #contributeContainer img {
   max-width: 250px;
   margin-top: 5%;
 }
+body .copyright div {
+  margin-top: 4%;
+}
+body .copyright div p {
+  font-size: 14px;
+  color: white;
+  letter-spacing: 0.7px;
+  margin-bottom: 4%;
+}
 body .contributeFooter {
   background-color: white;
   position: absolute;
@@ -349,15 +388,6 @@ body .contributeFooter p {
   color: #441717;
   font-size: 20px;
   margin: 0% 20% 8% 20%;
-}
-body .contributeFooter .copyright div {
-  margin-top: 5%;
-}
-body .contributeFooter .copyright div p {
-  font-size: 15px;
-  color: white;
-  letter-spacing: 0.7px;
-  margin-bottom: 4%;
 }
 body .contributeFooter .contributeContactRow {
   letter-spacing: 1px;
@@ -495,9 +525,6 @@ body .contactPageContainer .contactFooter div h4 {
   body .footerContainer .bottomRow p {
     font-size: 12px;
   }
-  body .profileContainer #carousel-bounding-box {
-    width: 100%;
-  }
   body .profileContainer #carousel-text h2 {
     margin-left: 0;
     margin-top: 30px;
@@ -512,10 +539,6 @@ body .contactPageContainer .contactFooter div h4 {
   body .contactContainer .contactRowInfo {
     display: block;
     padding: 20px;
-  }
-  body .contactContainer .contactRowInfo .subscriptionInput {
-    width: 100%;
-    margin-bottom: 15px;
   }
   body .meetOurTeamContainer .row {
     margin-top: 20%;
