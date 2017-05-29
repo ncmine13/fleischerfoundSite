@@ -447,19 +447,23 @@ body .contactPageContainer h2 {
 }
 body .contactPageContainer div p {
   font-size: 20px;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 body .contactPageContainer .usa {
-  padding-left: 15%;
+  padding-left: 10%;
 }
 body .contactPageContainer .kenya {
-  padding-right: 15%;
+  padding-right: 10%;
+}
+body .contactPageContainer iframe {
+  border: 1px;
+  border-radius: 3px;
 }
 body .contactPageContainer .contactFooter {
   margin-top: 0;
 }
 body .contactPageContainer .contactFooter div {
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 body .contactPageContainer .contactFooter div h4 {
