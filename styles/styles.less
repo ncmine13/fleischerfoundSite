@@ -81,6 +81,9 @@ body {
 		    		text-decoration: none;
 		    		font-size: 20px;
 		    	}
+		    	a:hover {
+		    		color:@red;
+		    	}
 		    }
 	}
 
@@ -117,6 +120,9 @@ body {
 	    		font-size: 20px;
 	    		padding: 15px 40px;
 	    	}
+	    	a:hover {
+		    	color:@red;
+		    }
 	    }
 	}
 
@@ -129,8 +135,8 @@ body {
 		
 		.btn {
 		    font-size: 50px;
-		    color: @gray;
-		    background-color: @red;
+		    color: @red;
+		    background-color: #f7f1f0;
 		    padding: 12px 24px;
 		    margin-top: 12%;
 		    box-shadow: 2px 2px 10px rgba(15, 14, 14, 0.74);
@@ -151,6 +157,11 @@ body {
 
 		.mainPimg {
 			margin: 5% 0%;
+			img {
+				height: 250px;
+				border-radius:360px;
+				box-shadow: 1px 2px 7px grey;
+			}
 		}
 		h1 {
 			color:@green;
@@ -160,7 +171,7 @@ body {
 		    text-shadow: 1px 2px 7px #aba1a1;
 		}
 		h2 {
-			color:@gray;
+			color:@red;
 			font-size: 35px;
 		    font-weight: bolder;
 		    letter-spacing: 1.5px;
@@ -191,6 +202,10 @@ body {
 				clear: both;
 				input {
 					border: none;
+					background-color:@green;
+					color:@lightGray; 
+					box-shadow: 1px 2px 7px grey;
+					letter-spacing: 1px;
 				}
 			}
 		}
@@ -214,7 +229,7 @@ body {
 					margin-left:4%;
 					font-size: 20px;
 					span {
-						color:@green;
+						color:@red;
 						font-weight: bold;
 					}
 				}
@@ -460,23 +475,34 @@ body {
 			background-color: @gray;
 			.subscription {
 				padding: 0% 7%;
-				p {
-					color: @lightGray;
-					margin: 0;
-					margin-bottom: 4%;
-					text-align: left;
-				}
-				input {
-					width:60%;
-					border-radius: 3px;
-					color: @lightGray;
+				color:@lightGray;
+				text-align: left;
+				form {
+					label {
+						font-weight: lighter;
+					}
+					input {
+						width:60%;
+						border-radius: 3px;
+						padding: 5px 10px;
+						color: @lightGray;
+					}
+					.button {
+						border: none;
+						background-color:@green;
+						color:@lightGray; 
+						box-shadow: 1px 2px 7px #272525;
+						letter-spacing: 1px;
+					}
 				}
 			}
 			.emailAddress {	
+				padding: 0 7%;
 				p {
 					color: @lightGray;
 					text-align: right;
-					margin: 0% 0% 3% 0%;
+					margin: 0;
+					margin-top:2%;
 				}
 			}
 		}
@@ -485,7 +511,7 @@ body {
 
 
 	.footerContainer {
-		background-color: @gray;
+		background-color: @green;
 		color: white;
 
 		.bottomRow {
@@ -601,6 +627,7 @@ body {
 			}
 			h2 {
 				font-size: 30px;
+				color:@red;
 			}
 		}
 		#nav {

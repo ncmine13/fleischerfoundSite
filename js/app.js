@@ -50,8 +50,7 @@ $('[id^=carousel-selector-]').click( function(){
 $('#myCarousel').on('slid.bs.carousel', function (e) {
     var id = $('.item.active').data('slide-number');
     console.log($('.item.active').data('slide-number'))
-    var lol = $('#carousel-text').html($('#slide-content-'+id).html());
-    console.log($('#slide-content-'+id))
-    console.log(lol, "this is lol")
+    $('#carousel-text').html($('#slide-content-'+id).html());
+
 });
 
