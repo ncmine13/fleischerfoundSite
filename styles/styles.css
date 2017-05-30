@@ -302,6 +302,10 @@ body .contactContainer .contactRowInfo form .clear {
 }
 body .contactContainer .contactRowInfo form .clear input {
   border: none;
+  background-color: #7E8F7C;
+  color: #EDF1F1;
+  box-shadow: 1px 2px 7px #272525;
+  letter-spacing: 1px;
 }
 body .contactContainer .contactRowInfo button {
   padding: 10px 20px;
@@ -466,14 +470,20 @@ body .contactPageContainer .row:nth-child(1) {
 }
 body .contactPageContainer h1 {
   font-size: 50px;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
+  margin-left: 5%;
 }
 body .contactPageContainer h2 {
   font-size: 35px;
 }
+body .contactPageContainer h3 {
+  margin-left: 7%;
+  margin-bottom: 3%;
+}
 body .contactPageContainer div p {
   font-size: 20px;
   margin-bottom: 2%;
+  color: #d22f25;
 }
 body .contactPageContainer .usa {
   padding-left: 10%;
@@ -484,9 +494,10 @@ body .contactPageContainer .kenya {
 body .contactPageContainer iframe {
   border: 1px;
   border-radius: 3px;
+  box-shadow: 1px 2px 7px gray;
 }
 body .contactPageContainer .contactFooter {
-  margin-top: 0;
+  margin-top: 5%;
 }
 body .contactPageContainer .contactFooter div {
   position: relative;
