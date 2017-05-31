@@ -164,7 +164,7 @@ body .emailContainer form .clear input {
   border: none;
   background-color: #7E8F7C;
   color: #EDF1F1;
-  box-shadow: 1px 2px 7px grey;
+  box-shadow: 0px 0px 3px #272525;
   letter-spacing: 1px;
 }
 body .emailContainer .getInTouch {
@@ -179,33 +179,20 @@ body .emailContainer .getInTouch div {
   text-align: right;
 }
 body .emailContainer .getInTouch div h3 {
-  color: #441717;
+  color: #462422;
   margin-right: 10%;
 }
 body .emailContainer .getInTouch div p {
-  color: #441717;
+  color: #462422;
   margin-left: 4%;
   font-size: 20px;
 }
 body .emailContainer .getInTouch div p span {
-  color: #d22f25;
+  color: #92635D;
   font-weight: bold;
 }
 body .emailContainer .getInTouch h1 {
   color: #0F1723;
-}
-body .emailContainer .subscribe h1 {
-  color: #0F1723;
-  text-align: right;
-}
-body .emailContainer .subscribe .form-control {
-  width: 70%;
-  float: right;
-  margin: 2% 0;
-}
-body .emailContainer .subscribe .submitButton {
-  clear: both;
-  float: right;
 }
 body .meetOurTeamContainer {
   text-shadow: 1px 2px 7px #aba1a1;
@@ -230,11 +217,13 @@ body .meetOurTeamContainer .profile p {
 }
 body .profileContainer {
   margin-bottom: 5%;
+  padding: 5%;
   text-shadow: 1px 2px 7px #aba1a1;
 }
 body .profileContainer .studentsH1 {
   margin-top: 6%;
   margin-bottom: 4%;
+  color: #462422;
 }
 body .profileContainer .studentInfo {
   margin-top: -20px;
@@ -246,11 +235,28 @@ body .profileContainer .studentInfo .thumbnails {
 body .profileContainer .studentInfo .thumbnails .thumbnail {
   margin: 5%;
 }
+body .profileContainer #carousel-text {
+  text-align: left;
+  padding-left: 5%;
+}
 body .profileContainer #carousel-text h2 {
   font-size: 45px;
   font-weight: bold;
   color: #d22f25;
   letter-spacing: 2.5px;
+}
+body .profileContainer #carousel-text p {
+  font-size: 17px;
+  color: #462422;
+}
+body .profileContainer #carousel-bounding-box {
+  background-color: #7E8F7C;
+  padding: 10px;
+  box-shadow: 1px 1px 8px rgba(59, 54, 54, 0.74);
+  border-radius: 2px;
+}
+body .profileContainer #carousel-bounding-box video {
+  border-radius: 2px;
 }
 body .profileContainer .carousel-control {
   background: none !important;
@@ -304,7 +310,7 @@ body .contactContainer .contactRowInfo form .clear input {
   border: none;
   background-color: #7E8F7C;
   color: #EDF1F1;
-  box-shadow: 1px 2px 7px #272525;
+  box-shadow: 0px 0px 7px #272525;
   letter-spacing: 1px;
 }
 body .contactContainer .contactRowInfo button {
@@ -420,6 +426,7 @@ body .contributeFooter .contributeContactRow .subscription {
 }
 body .contributeFooter .contributeContactRow .subscription form label {
   font-weight: lighter;
+  font-size: 17px;
 }
 body .contributeFooter .contributeContactRow .subscription form input {
   width: 60%;
@@ -438,6 +445,7 @@ body .contributeFooter .contributeContactRow .emailAddress {
   padding: 0 7%;
 }
 body .contributeFooter .contributeContactRow .emailAddress p {
+  font-size: 17px;
   color: #EDF1F1;
   text-align: right;
   margin: 0;
@@ -506,9 +514,42 @@ body .contactPageContainer .contactFooter div {
 body .contactPageContainer .contactFooter div h4 {
   font-size: 15px;
 }
-@media screen and (max-width: 990px) {
-  .profile h1 {
+@media screen and (max-width: 1028px) {
+  body .profile h1 {
     margin: 8% 20%;
+  }
+  body #nav .nav a {
+    padding: 14px;
+  }
+  body .profileContainer .studentsH1 {
+    margin-top: 10%;
+  }
+  body .parallax-window .btn {
+    margin-top: 9%;
+  }
+  body .contributeFooter .taxExempt {
+    padding: 7% 0;
+  }
+  body .contributeFooter .copyright p {
+    font-size: 12px;
+  }
+  body .contributeFooter .contributeContactRow {
+    padding-top: 5%;
+    padding-bottom: 0;
+  }
+  body .contributeFooter .contributeContactRow form {
+    margin: 5% 0;
+  }
+  body .contributeFooter .contributeContactRow .emailAddress p {
+    text-align: center;
+  }
+  body .contributeFooter .contributeContactRow .subscription input {
+    width: 80%;
+    margin: 0 10%;
+  }
+  body .contributeFooter p {
+    font-size: 20px;
+    margin: 5% 6%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -625,26 +666,6 @@ body .contactPageContainer .contactFooter div h4 {
   body #contributeContainer select {
     color: rgba(126, 143, 124, 0.82);
     margin-top: 5%;
-  }
-  body .contributeFooter .taxExempt {
-    padding: 7% 0;
-  }
-  body .contributeFooter .copyright p {
-    font-size: 12px;
-  }
-  body .contributeFooter .contributeContactRow {
-    padding-top: 5%;
-    padding-bottom: 0;
-  }
-  body .contributeFooter .contributeContactRow form {
-    margin: 5% 0;
-  }
-  body .contributeFooter .contributeContactRow .emailAddress p {
-    text-align: center;
-  }
-  body .contributeFooter .contributeContactRow .subscription input {
-    width: 80%;
-    margin: 0 10%;
   }
   body .contributeFooter p {
     font-size: 14px;
